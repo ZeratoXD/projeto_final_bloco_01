@@ -19,7 +19,7 @@ public class Menu {
 
 			System.out.println("***************************************************** ");
 			System.out.println("                                                      ");
-			System.out.println("                SUPLEMENTOS DO MONSTRÃO               ");
+			System.out.println("                SUPLEMENTOS DO MONSTRÃO XxX               ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
