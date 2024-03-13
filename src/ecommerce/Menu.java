@@ -1,7 +1,9 @@
 package ecommerce;
 
 import java.util.Scanner;
-
+import ecommerce.model.Creatina;
+import ecommerce.model.Ecommerce;
+import ecommerce.model.WheyProtein;
 import ecommerce.util.Cores;
 
 public class Menu {
@@ -12,6 +14,23 @@ public class Menu {
 
 		int opcao;
 
+		Creatina wp = new Creatina ("Whey Protein", "Big Massa", 100.0f);
+		
+		WheyProtein cr =  new WheyProtein("Creatina", "Furiosa", 80.0f);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		while (true) {
 
 			System.out.println(Cores.TEXT_PURPLE + Cores.ANSI_BLACK_BACKGROUND
