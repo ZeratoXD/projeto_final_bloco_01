@@ -1,11 +1,23 @@
 package ecommerce.repository;
 
+import ecommerce.model.Ecommerce;
+
 public interface EcommerceRepository {
 
-	// Métodos comuns para todos os suplementos
-    String getNome();
-    float getPreco();
-    String getMarca();
-}
-	
+	// Operações CRUD
 
+	// Criar
+	public void adicionarProduto(Ecommerce suplemento);
+
+	// Ler
+
+	public void buscarProdutos();
+
+	// Atualizar
+	public void atualizarProduto(Ecommerce suplemento);
+
+	// Deletar
+	public void removerProduto(int id);
+
+
+}
