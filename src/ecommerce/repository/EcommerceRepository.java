@@ -8,6 +8,7 @@ public interface EcommerceRepository {
 
 	// Criar
 	public void adicionarProduto(Ecommerce suplemento);
+	public void cadastrar(Ecommerce suplemento);
 
 	// Ler
 
@@ -19,5 +20,6 @@ public interface EcommerceRepository {
 	// Deletar
 	public void removerProduto(int id);
 
+	
 
 }

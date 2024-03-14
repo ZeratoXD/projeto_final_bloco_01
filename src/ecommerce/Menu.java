@@ -1,6 +1,7 @@
 package ecommerce;
 
 import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import ecommerce.model.Creatina;
@@ -21,6 +22,10 @@ public class Menu {
 		int opcao, id = 0;
 		String nome, marca, produto, treino;
 		float preco;
+		
+		
+		Creatina cr = new Creatina(suplementos.gerarId(),"Creatina", "CreatinaXD", 100.0f, "Pré-treino");
+		suplementos.cadastrar(cr);
 
 		while (true) {
 
@@ -43,8 +48,15 @@ public class Menu {
 			System.out.println("Entre com a opção desejada:                           ");
 			System.out.println("                                                      " + Cores.ANSI_BLACK_BACKGROUND_BRIGHT);
 
-			opcao = leia.nextInt();
-
+			
+			try {
+				opcao = leia.nextInt();
+			} catch (InputMismatchException e) {
+				System.out.println("\nDigite valores inteiros!");
+				leia.nextLine();
+				opcao = 0;
+				
+			}
 			if (opcao == 5) {
 				System.out.println(
 						Cores.TEXT_WHITE + "\nSuplementos do monstrão! - Com você nós crescemos juntos! ");

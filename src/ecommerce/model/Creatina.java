@@ -2,11 +2,11 @@ package ecommerce.model;
 
 public class Creatina extends Ecommerce {
 
-	private String pretreino;
+	private String treino;
 
-	public Creatina(int id, String produto, String nome, float preco, String pretreino) {
+	public Creatina(int id, String produto, String nome, float preco, String treino) {
 		super(id, produto, nome, preco);
-		this.pretreino = pretreino;
+		this.treino = treino;
 	}
 
 	@Override
@@ -16,14 +16,14 @@ public class Creatina extends Ecommerce {
 		System.out.println("Ideal para antes do treino !");
 	}
 
-	public String getPretreino() {
+	public String gettreino() {
 
-		return pretreino;
+		return treino;
 
 	}
 
-	public void setPretreino(String pretreino) {
-		this.pretreino = pretreino;
+	public void setPretreino(String treino) {
+		this.treino = treino;
 
 	}
 }

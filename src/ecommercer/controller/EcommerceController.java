@@ -10,7 +10,7 @@ public class EcommerceController implements EcommerceRepository {
 	
 	private ArrayList<Ecommerce> listaSuplementos = new ArrayList<Ecommerce>();
 	
-	int id = 0;
+	int id;
 
 
 	@Override
@@ -62,6 +62,14 @@ public class EcommerceController implements EcommerceRepository {
 	
 	public int gerarId() {
 		return ++id;
+	}
+
+
+	@Override
+	public void cadastrar(Ecommerce suplemento) {
+		listaSuplementos.add(suplemento);
+		System.out.println("\nO Produto de ID: " + suplemento.getId() + "foi criada com sucesso!");
+		
 	}
 
 	
